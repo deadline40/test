@@ -1,0 +1,52 @@
+header 
+{
+    height: 70px;
+    color: red;
+    border: 10px;
+    border-color: red;
+    background-color: aqua;
+    text-align-last: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+#art1 
+{
+    width: 500px;
+    height: 800px;
+    color: white;
+    background: black;
+    padding: 10px;
+    margin: 10px;
+}
+#art2 
+{
+    width: 500px;
+    height: 800px;
+    color: white;
+    background: black;
+    padding: 10px;
+    margin: 10px;
+}
+#content 
+{
+    width: 1000px;
+    height: 800px;
+    border: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+footer 
+{
+    height: 70px;
+    color: whitesmoke;
+    border: 10px;
+    border-color: brown;
+    background-color: aqua;
+    text-align-last: center;
+    padding: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
