@@ -1,5 +1,4 @@
 :root {
-  /* couleurs */
   --bg: #14181f;
   --surface: #1b212b;
   --border: #2a313d;
@@ -9,11 +8,9 @@
   --accent-soft: rgba(232, 162, 61, 0.12);
   --accent-2: #5fb3a3;
 
-  /* typo */
   --font-mono: 'JetBrains Mono', 'Fira Code', 'Source Code Pro', monospace;
   --font-sans: 'Inter', 'IBM Plex Sans', system-ui, sans-serif;
 
-  /* layout */
   --gutter-w: 48px;
   --tabbar-h: 48px;
   --line-h: 24px;
