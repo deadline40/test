@@ -10,7 +10,266 @@
 <header>
     <h1>Title</h1>
 </header>
-<div id="content">
+<div id="content"><!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Théo Lambert — Développeur Full-Stack</title>
+<meta name="description" content="Portfolio de Théo Lambert, développeur full-stack spécialisé React / Node.js.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%2314181f'/%3E%3Ctext x='50' y='64' font-family='monospace' font-weight='700' font-size='38' fill='%23e8a23d' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gutter" id="gutter" aria-hidden="true"></div>
+
+  <header class="tabbar">
+    <nav class="tabs" id="tabs" aria-label="Navigation principale">
+      <a href="#home" class="tab active" data-target="home">home.js</a>
+      <a href="#about" class="tab" data-target="about">apropos.md</a>
+      <a href="#skills" class="tab" data-target="skills">competences.yml</a>
+      <a href="#projects" class="tab" data-target="projects">projets.json</a>
+      <a href="#experience" class="tab" data-target="experience">parcours.log</a>
+      <a href="#contact" class="tab" data-target="contact">contact.sh</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="section hero">
+      <p class="eyebrow">$ whoami</p>
+      <h1 class="hero-name">Ihonty RAKOTOJAONA<span class="cursor" aria-hidden="true">_</span></h1>
+      <p class="hero-role">Développeur full-stack · React · Node.js · Lyon</p>
+      <p class="hero-text">Je construis des interfaces rapides et des API qui ne tombent pas en panne à 3h du matin. Actuellement freelance, disponible pour des missions web et produit.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost">$ me-contacter</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <p class="eyebrow">// apropos.md</p>
+      <h2>Qui suis-je ?</h2>
+      <p class="lead">Développeur depuis 2 ans, je conçois des produits web de bout en bout : de l'architecture back-end jusqu'au dernier pixel d'interface. J'aime particulièrement transformer un besoin flou en interface claire — et en code que la prochaine personne pourra relire sans grimacer.</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">ans d'expérience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">projets livrés</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">stacks maîtrisées</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="eyebrow">// competences.yml</p>
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>frontend:</h3>
+          <ul class="skill-list">
+            <li class="skill" data-level="90">
+              <span class="skill-name">JavaScript / TypeScript</span>
+              <span class="skill-bar"><span class="skill-fill"></span></span>
+              <span class="skill-pct">90%</span>
+            </li>
+            <li class="skill" data-level="85">
+              <span class="skill-name">React</span>
+              <span class="skill-bar"><span class="skill-fill"></span></span>
+              <span class="skill-pct">85%</span>
+            </li>
+            <li class="skill" data-level="75">
+              <span class="skill-name">CSS / Tailwind</span>
+              <span class="skill-bar"><span class="skill-fill"></span></span>
+              <span class="skill-pct">75%</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>backend:</h3>
+          <ul class="skill-list">
+            <li class="skill" data-level="85">
+              <span class="skill-name">Node.js / Express</span>
+              <span class="skill-bar"><span class="skill-fill"></span></span>
+              <span class="skill-pct">85%</span>
+            </li>
+            <li class="skill" data-level="75">
+              <span class="skill-name">PostgreSQL</span>
+              <span class="skill-bar"><span class="skill-fill"></span></span>
+              <span class="skill-pct">75%</span>
+            </li>
+            <li class="skill" data-level="60">
+              <span class="skill-name">Python</span>
+              <span class="skill-bar"><span class="skill-fill"></span></span>
+              <span class="skill-pct">60%</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>outils:</h3>
+          <ul class="skill-list">
+            <li class="skill" data-level="90">
+              <span class="skill-name">Git</span>
+              <span class="skill-bar"><span class="skill-fill"></span></span>
+              <span class="skill-pct">90%</span>
+            </li>
+            <li class="skill" data-level="70">
+              <span class="skill-name">Docker</span>
+              <span class="skill-bar"><span class="skill-fill"></span></span>
+              <span class="skill-pct">70%</span>
+            </li>
+            <li class="skill" data-level="65">
+              <span class="skill-name">CI / CD</span>
+              <span class="skill-bar"><span class="skill-fill"></span></span>
+              <span class="skill-pct">65%</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="eyebrow">// projets.json</p>
+      <h2>Projets</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-name">taskflow.app</span>
+            <span class="project-hash">#a3f9c2</span>
+          </div>
+          <p class="project-desc">Application de gestion de tâches collaborative avec tableaux en temps réel et notifications.</p>
+          <div class="project-tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Code →</a>
+            <a href="#" target="_blank" rel="noopener">Démo →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-name">devnotes-api</span>
+            <span class="project-hash">#7c1e84</span>
+          </div>
+          <p class="project-desc">API REST de prise de notes avec authentification JWT et permissions par équipe.</p>
+          <div class="project-tags"><span>Express</span><span>MongoDB</span><span>JWT</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Code →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-name">weather-dash</span>
+            <span class="project-hash">#e02b4f</span>
+          </div>
+          <p class="project-desc">Dashboard météo temps réel avec historique et graphiques interactifs.</p>
+          <div class="project-tags"><span>Vue.js</span><span>Chart.js</span><span>API REST</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Code →</a>
+            <a href="#" target="_blank" rel="noopener">Démo →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-name">portfolio-cli</span>
+            <span class="project-hash">#5d8a31</span>
+          </div>
+          <p class="project-desc">Petit outil en ligne de commande pour générer un portfolio statique à partir d'un fichier JSON.</p>
+          <div class="project-tags"><span>Node.js</span><span>Commander.js</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Code →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <p class="eyebrow">// parcours.log</p>
+      <h2>Parcours</h2>
+      <ol class="commit-log">
+
+        <li class="commit">
+          <span class="commit-dot"></span>
+          <div class="commit-body">
+            <div class="commit-meta"><span class="commit-hash">#7e1d4a</span><span class="commit-date">2024 — aujourd'hui</span></div>
+            <p class="commit-msg"><span class="commit-tag">feat:</span> Lead développeur front-end @ Entreprise C</p>
+            <p class="commit-desc">Pilotage technique d'une refonte complète en React / TypeScript, encadrement de 2 développeurs.</p>
+          </div>
+        </li>
+
+        <li class="commit">
+          <span class="commit-dot"></span>
+          <div class="commit-body">
+            <div class="commit-meta"><span class="commit-hash">#3f9b21</span><span class="commit-date">2022 — 2024</span></div>
+            <p class="commit-msg"><span class="commit-tag">feat:</span> Développeur full-stack @ Entreprise B</p>
+            <p class="commit-desc">Conception d'API et d'interfaces pour une plateforme SaaS B2B utilisée par 200+ entreprises.</p>
+          </div>
+        </li>
+
+        <li class="commit">
+          <span class="commit-dot"></span>
+          <div class="commit-body">
+            <div class="commit-meta"><span class="commit-hash">#1a6c08</span><span class="commit-date">2020 — 2022</span></div>
+            <p class="commit-msg"><span class="commit-tag">feat:</span> Développeur junior @ Entreprise A</p>
+            <p class="commit-desc">Premiers pas en entreprise, apprentissage du travail en équipe agile et des bonnes pratiques Git.</p>
+          </div>
+        </li>
+
+      </ol>
+    </section>
+
+    <section id="contact" class="section">
+      <p class="eyebrow">// contact.sh</p>
+      <h2>Travaillons ensemble</h2>
+      <p class="lead">Un projet en tête ou juste envie d'échanger ? Le terminal écoute.</p>
+
+      <form class="contact-form" id="contactForm">
+        <label for="name">$ --name
+          <input type="text" id="name" name="name" required>
+        </label>
+        <label for="email">$ --email
+          <input type="email" id="email" name="email" required>
+        </label>
+        <label for="message">$ --message
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">./envoyer.sh</button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+
+      <div class="social-links">
+        <a href="https://github.com/theolambert" target="_blank" rel="noopener">$ open github.com/theolambert</a>
+        <a href="https://linkedin.com/in/theolambert" target="_blank" rel="noopener">$ open linkedin.com/in/theolambert</a>
+        <a href="mailto:theo@example.com">$ open mailto:theo@example.com</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>// build v1.0.0 · © 2026 Ihonty RAKOTOJAONA</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
     <article id="art1">
         <h2>title1</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, in amet! Hic accusantium pariatur reiciendis, in tempore soluta reprehenderit quae dolorum deleniti enim quis facilis fuga consequuntur impedit nostrum illo?</p>
