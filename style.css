@@ -1,6 +1,6 @@
 header 
 {
-    height: 70px;
+    height: 8%;
     color: red;
     border: 10px;
     border-color: red;
@@ -11,8 +11,8 @@ header
 }
 #art1 
 {
-    width: 500px;
-    height: 800px;
+    width: 80%;
+    height: 80%;
     color: white;
     background: black;
     padding: 10px;
@@ -20,8 +20,8 @@ header
 }
 #art2 
 {
-    width: 500px;
-    height: 800px;
+    width: 80%;
+    height: 80%;
     color: white;
     background: black;
     padding: 10px;
@@ -29,17 +29,18 @@ header
 }
 #content 
 {
-    width: 1000px;
-    height: 800px;
+    height: 90%;
     border: 10px;
     border-radius: 5px;
     padding: 10px;
     display: flex;
     flex-direction: row;
+    margin-left: 90px;
+    margin-right: 90px;
 }
 footer 
 {
-    height: 70px;
+    height: 7%;
     color: whitesmoke;
     border: 10px;
     border-color: brown;
@@ -48,5 +49,22 @@ footer
     padding: 20px;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px;
+    margin: 30px;
+}
+@media (max-width : 768px) {
+    #content
+    {
+        width: 100%;
+        margin: 2%;
+    }
+   /* header
+    {
+        width: 100%;
+        margin: 2%;
+    }
+    footer
+    {
+        width: 100%;
+        margin: 2%;
+    } */
 }
